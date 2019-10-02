@@ -19,30 +19,56 @@
                   font-family: helvetica;
                   color: black}
 
-                  .container {background: #c9ffcc;
-                    width:600px;
-                    margin: auto;
-                    text-align:center;
-                  }
-             a { style= "font-family:helvetica; color: #c9ffcc; background: #10005f"}
+                                    .container {background: #c9ffcc;
+                                      width:800px;
+                                      margin: auto;
+                                      text-align:center;
+                                    }
+                               a { style= "font-family:helvetica; color: #c9ffcc; background: #10005f"}
+                               header::after{
+                                 content: '';
+                                 display: table;
+                                 clear: both;
+                               }
+                               nav {float: center;}
+                               nav ul {
+                               margin: 0 ;
+                               pading:0;
+                               list style: none;
+                           }
+                           nav li {
+                             display: inline-block;
+                             margin-left: 5px;
+                             padding-top: 25px;
 
-      </style>
-      </head>
+                           }
+                           nav a {
+                             color: black;
+                             text-decoration: none;
+                             display:block;
+                           }
 
-<body>
-  <div class="container">
+                         </style>
+                         </head>
 
-    <nav style= "font-family:helvetica; color: #c9ffcc; background: #10005f">
+                   <body>
+                     <div class="container">
+                       <nav style= "font-family:helvetica; color: #c9ffcc;">
+                           <ul>
 
-    <a href="MAYA.html">HOME</a> <a href="zine.html">ZINE</a>     <a href="online works.html">PORTFOLIO</a>      <a href="mysticstuff.html">MYSTIC STUFF</a>      <a href="Djing.html">MUSIC</a>     <a href="contactinfo.html">CONTACT</a>
-
-    </nav>
-
+                              <li><a href="MAYA.html">HOME</a></li>
+                              <li><a href="zine.html">ZINE</a></li>
+                              <li><a href="Portfolio.html">PORTFOLIO</a></li>
+                              <li><a href="mysticstuff.html">MYSTIC STUFF</a> </li>
+                              <li><a href="Djing.html">MUSIC</a></li>
+                              <li><a href="contactinfo.html">CONTACT</a></li>
+                            </ul>
+                       </nav>
 
   <h1><i>MUSIC
 
 </i></h1>
-  <img src="untitled-3.png" style= "width:100%">
+
   </div>
 </body>
 </html>
