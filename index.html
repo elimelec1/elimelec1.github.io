@@ -1,19 +1,161 @@
 <!DOCTYPE html>
 <html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    $("#circle").hover(function () {
+      $(".title").css("opacity", "1");
+    });
+
+  });
+</script>
+<style>
+
+body{
+  background-image: url('portfoliobackground.png');
+  background-size: cover;
+}
+div {
+  position:absolute;
+  TOP:35px;
+  LEFT:500px;
+  WIDTH:50px;
+  HEIGHT:50px
+}
+@font-face {
+  font-family: Fairies Gone Wild Plus;
+  src: url(Fairies-Gone-Wild-Plus_clean.otf);
+  font-family: PTSerif-Italic;
+  src: url(PTSerif-Italic.ttf)
+
+}
+h2{
+  font-family: Fairies Gone Wild Plus;
+  position: absolute;
+  LEFT:100px;
+  font-size: 60px;
+  text-align: center;
+}
+h3{
+  font-family: PTSerif-Italic;
+  position: absolute;
+  LEFT:100px;
+  TOP:115px;
+  font-size: 15px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: black
+}
+a:hover {
+  color: white;
+}
+.title{
+  opacity: 0;
+  transition: opacity 4s;
+}
+.title:hover {
+  color: white;
+}
+
+.mirror {
+  font-size: 25px;
+  font-family: PTSerif-Italic;
+  position: absolute;
+  TOP:75px;
+  LEFT:600px;
+  WIDTH:100px;
+  HEIGHT:50px
+}
+
+.dragon {
+  font-size: 25px;
+  font-family: PTSerif-Italic;
+  position: absolute;
+  TOP:200px;
+  LEFT:425px;
+  WIDTH:100px;
+  HEIGHT:50px
+}
+.samesame {
+  font-size: 25px;
+  font-family: PTSerif-Italic;
+  position: absolute;
+  TOP:400px;
+  LEFT:450px;
+  WIDTH:50px;
+  HEIGHT:50px
+}
+.light {
+  font-size: 25px;
+  font-family: PTSerif-Italic;
+  position: absolute;
+  TOP:740px;
+  LEFT: 700px;
+  WIDTH:100px;
+  HEIGHT:50px
+}
+.bluethreads{
+  font-size: 25px;
+font-family: PTSerif-Italic;
+  position: absolute;
+  TOP:200px;
+  LEFT:1060px;
+  WIDTH:50px;
+  HEIGHT:50px
+}
+.street{
+  font-size: 25px;
+  font-family: PTSerif-Italic;
+  position: absolute;
+  TOP:400px;
+  LEFT:1100px;
+  WIDTH:100px;
+  HEIGHT:50px
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+</style>
+
 <body>
+  <video autoplay muted loop id="myVideo">
+    <source src="sparkle overlay_1.mp4" type="video/mp4">
+  </video>
 
-<h1>All Projects</h1>
+<h2>Maya Elimelech</h2>
+<h3 class="contact">contact: elimelechmaya@gmail.com</h3>
 
-
-<p><a href="https://elimelec1.github.io/weeklies/">Weeklies</a></p>
-
-<p><a href="https://elimelec1.github.io/Class_1/">Fan Page</a></p>
-
-<p><a href="https://elimelec1.github.io/new_site/">Portfolio</a></p>
-
-<p><a href="https://elimelec1.github.io/fish/">Digital Narrative</a></p>
-
-<p><a href="https://elimelec1.github.io/poem_site/">Final Project</a></p>
-
+<div>
+<img id= "circle" src="unnamed.png" width="600" height="750" >
+</div>
+<div class= "mirror title">
+  <a href="mirror.html">Mirror</a>
+</div>
+<div class= "dragon title">
+  <a href="dragon.html">Dragon Energy</a>
+</div>
+<div class= "samesame title">
+  <a href="samesame.html">Same Same Different</a>
+</div>
+</div>
+<div class= "light title">
+  <a href="street.html">Streetlight Passenger</a>
+</div>
+</div>
+<div class= "bluethreads title">
+  <a href="blue.html">Tiny Strings Shaded Blue</a>
+</div>
+</div>
+<div class= "street title">
+  <a href="light.html">In the Light of the Morning</a>
+</div>
 </body>
 </html>
